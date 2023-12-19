@@ -1,0 +1,181 @@
+*{
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+     background-image:linear-gradient(rgba(0,0,0,0.70), rgba(0,0,0,0.70)), url(../images/mathapp.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+  
+  }
+#p1{
+   font-size: 60px;
+   color: goldenrod;
+   font-weight: 1000;
+   margin-left: 350px;
+
+}
+#sideBox{
+    color: rgb(255, 255, 255);
+    background-color: rgb(82, 220, 255);
+    height: 650px;
+    width: 400px;
+    border-radius: 10px;
+    position: relative;
+    padding: 20px;
+}
+#alabel{
+    padding: 20px;
+    color: red;
+    font-size: 20px;
+    padding-top: 40px;
+}
+#blabel{
+    padding: 20px;
+    color: red;
+    font-size: 20px;
+}
+#atext{
+    color: black;
+    font-size: 15px;
+    padding: 5px;
+    width: 200px;
+}
+#btext{
+    color: black;
+    font-size: 15px;
+    width: 200px;
+    padding: 5px;
+}
+
+#button{
+    color: blue;
+    height: 40px;
+    width: 100px;
+    margin-top: 10px;
+}
+#button:hover{
+    color: rgb(0, 0, 0);
+    height: 40px;
+    width: 100px;
+    margin-top: 10px;
+}
+#button2{
+    color: blue;
+    height: 40px;
+    width: 100px;
+    margin-top: 10px;
+}
+#button2:hover{
+    color: rgb(0, 0, 0);
+    height: 40px;
+    width: 100px;
+    margin-top: 10px;
+}
+#button3{
+    color: blue;
+    height: 40px;
+    width: 100px;
+    margin-top: 10px;
+}
+#button3:hover{
+    color: rgb(0, 0, 0);
+    height: 40px;
+    width: 100px;
+    margin-top: 10px;
+}
+#button4{
+    color: blue;
+    height: 40px;
+    width: 100px;
+    margin-top: 10px;
+}
+#button4:hover{
+    color: rgb(0, 0, 0);
+    height: 40px;
+    width: 100px;
+    margin-top: 10px;
+}
+#button5{
+    color: blue;
+    height: 40px;
+    width: 100px;
+    margin-top: 10px;
+}
+#button5:hover{
+    color: rgb(0, 0, 0);
+    height: 40px;
+    width: 100px;
+    margin-top: 10px;
+}
+#label{
+    color: black;
+    font-size: 30px;
+    
+    font-weight: 600;
+}
+#resetButton{
+    color: blue;
+    height: 40px;
+    width: 100px;
+    margin-top: 40px;
+}
+#resetButton:hover{
+    color: rgb(0, 0, 0);
+    height: 40px;
+    width: 100px;
+    margin-top: 40px;
+}
+.text{
+    font-size: 30px;
+    color: goldenrod;
+    margin-left: 600px;
+    position: relative;
+}
+#countLabel{
+    padding: 20px;
+    font-size: 50px;
+}
+#sideBox1{
+    color: rgb(255, 255, 255);
+    background-color: rgb(82, 220, 255);
+    height: 650px;
+    width: 400px;
+    border-radius: 10px;
+    position: relative;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+#decBtn{
+    width: 100px;
+    height: 50px;
+    color: black;
+    margin-top: 40px;
+}
+#resetBtn{
+    width: 100px;
+    height: 50px;
+    color: black;
+}
+#incBtn{
+    width: 100px;
+    height: 50px;
+    color: black;
+}
+#countJs{
+    font-size: 30px;
+    color: goldenrod;
+
+}
+#countLabel{
+    color: blueviolet;
+    font-size: 50px;
+    padding-top: 40px;
+}
+#elenames{
+    font-size: 50px;
+    color: aqua;
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- title -->
+    <title>Countdown Timer</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./css/countdown.css">
+    <!-- logo -->
+    <link rel="icon" href="./images/logo.png" type="image/x-icon">
+</head>
+<body background="img/bg.jpg">
+    <h1>New Year Countdown</h1>
+
+    <div class="countdown">
+    <div class="time">
+        <span class="days">00</span>
+        <div class="smalltext">Days</div>
+    </div>
+    <div class="time">
+        <span class="hours">00</span>
+        <div class="smalltext">Hours</div>
+    </div>
+    <div class="time">
+        <span class="minutes">00</span>
+        <div class="smalltext">Minutes</div>
+    </div>
+    <div class="time">
+        <span class="seconds">00</span>
+        <div class="smalltext">Seconds</div>
+    </div>
+</div>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        background-image: url(./images/countbg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        height: 100vh;
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 0;
+        overflow: hidden;
+    }
+    h1 {
+        color: black;
+        text-transform: uppercase;
+    }
+    .countdown{
+        display: flex;
+        justify-content: space-around;
+        color: black;
+        transform: scale(2);
+    }
+
+    .time{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 15px;
+    }
+
+    .time span{
+        font-size: 2.5em;
+        display: block;
+        color: black;
+    }
+
+    .smalltext{
+        padding-top: 0.5em;
+        font-size: 1em;
+        color: black;
+    }
+    @media(max-width:500px) {
+        h1 {
+            font-size: 45px;
+        }
+        .time {
+            margin: 5px;
+        }
+        .time h2 {
+            font-size: 12px;
+        }
+        .time small {
+            font-size: 10px;
+        }
+}
+</style>
+<script>
+    var countDownDate = new Date("January 01, 2024 23:59:59").getTime();
+    var countdownfunction = setInterval(function() {
+        var now = new Date().getTime();
+        var distance = countDownDate - now;
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        document.querySelector(".days").innerHTML = days;
+        document.querySelector(".hours").innerHTML = hours;
+        document.querySelector(".minutes").innerHTML = minutes;
+        document.querySelector(".seconds").innerHTML = seconds;
+
+        if (distance < 0) {
+            clearInterval(countdownfunction);
+            document.querySelector(".countdown").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
+</body>
+</html>

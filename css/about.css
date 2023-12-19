@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+}
+
+body {
+    background-image: url(../images/nice.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+nav {
+    font-size: 20px;
+}
+
+.nav-link {
+    margin-left: 50px;
+}
+
+span {
+    color: #6ed3e4;
+}
+
+.title {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.about {
+    font-size: 18px;
+    letter-spacing: 1.5px;
+}
+
+.about-us {
+    text-align: center;
+}
+
+.row {
+    padding-top: 10px;
+    justify-content: center;
+}
+
+.card {
+    margin: 20px;
+}
+
+.card-img-top {
+    height: 100px;
+    width: 200px;
+}
+
+img {
+    height: 150px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px 0px rgba(110, 211, 228);
+}
